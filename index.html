@@ -1,0 +1,9 @@
+<script>
+  const q = new URLSearchParams(window.location.search).get("q");
+  if (q) {
+    window.location.href = `https://perplexity.ai/search?q=${q}`;
+    window.open(`https://www.google.com/search?q=${q}`, "_blank");
+  } else {
+    window.location.href = "https://google.com";
+  }
+</script>
